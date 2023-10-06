@@ -10,3 +10,11 @@ def index():
 def show_name(name):
     return "Hello, { name }"
  
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    return render_template("contact.html")
+
+@app.route("/contact_complete")
+def contact_complete():
+    return render_template("contact_complete.html")
+
