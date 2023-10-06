@@ -14,7 +14,7 @@ def show_name(name):
 def contact():
     return render_template("contact.html")
 
-@app.route("/contact_complete")
+@app.route("/contact_complete", methods=["GET", "POST"])
 def contact_complete():
     return render_template("contact_complete.html")
 
